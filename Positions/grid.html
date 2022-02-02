@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Grid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 4fr 1fr 1fr;
+      /* Pode ser usado as medidas vh, px, e 1fr(fica flexível, 1 fração) */
+      grid-template-rows: 15vh 1fr 30px;
+      /* O ponto faz não ser ocupado o espaço */
+      grid-template-areas:
+        "header header header"
+        "main aside ."
+        "footer footer footer"
+      ;
+      /* espaçamento entre os elementos (horizontal, vertical) */
+      grid-gap: 5px 20px;
+
+    }
+
+    header {
+      background-color: yellow;
+      grid-area: header;
+      /* Usado o flex para alinhar A logo e o menu */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    main {
+      background-color: green;
+      grid-area: main;
+    }
+
+    aside {
+      background-color: blue;
+      grid-area: aside;
+    }
+
+    footer {
+      background-color: red;
+      grid-area: footer;
+    }
+  </style>
+</head>
+<header>
+  <div>Logo</div>
+  <div>Menu</div>
+</header>
+<main>Conteúdo</main>
+<aside>Infos adicionais</aside>
+<footer>Rodapé</footer>
+
+<body>
+
+</body>
+
+</html>

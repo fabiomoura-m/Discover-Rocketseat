@@ -1,0 +1,501 @@
+<!--
+  Anatomia de um documento HTML
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <!--maioria dos caracteres que existem
+   meta representa meta dados em nossa pagina-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Configura pagina que será visivel tanto em dispositivos mobiles quanto desktop -->
+  <link rel="icon" href="/images/favicon.ico" />
+
+  <title>FabioMoura</title>
+</head>
+
+<body></body>
+
+</html>
+
+<!-- 
+  Escrever 2 paragrafos dando enfase e importancia para algumas palavras e adicione um link de sabia mais
+
+- use a tag em para enfase
+- use a tag strong para importancia
+- o link pode levar ao google
+-->
+<p>
+  Ola pessoal, <em>tudo bem</em> com <strong>vocês?</strong>
+  <b> por aqui tudo bem</b>
+</p>
+<p>
+  Lorem ipsum, dolor sit amet consectetur adipisicing
+  <b>elit.</b> Repudiandae consequatur ratione, sint explicabo sapiente quos.
+  Aspernatur voluptas, inventore, ullam assumenda necessitatibus suscipit ab
+  beatae recusandae quis porro fugiat laudantium exercitationem.
+</p>
+<a href="https://www.google.com">Saiba mais</a>
+
+<!--
+  Caracteres Reservados do HTML
+  < , > , "" , '' , &
+-->
+<p>
+  &lt;os espaços que colocamos&gt;
+  <br />
+  &quot;sao ignorados&quot;
+  <br />
+  &amp; ok
+  <br />
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ola pessoal
+  <br />
+  &apos;ok&apos;
+</p>
+<!--
+  Títulos e Parágrafos
+  o próprio titlulo já da o parágrafo
+-->
+<h1>Sobre mim</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+Eligendi at velit, maiores sint commodi voluptatibus voluptate in ducimus
+suscipit illo perspiciatis eius ad maxime voluptates quis sunt cupiditate qui
+fugit.
+
+<h2>Nascimento</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, cupiditate harum
+odit ab dolore sunt accusamus! Sapiente expedita earum explicabo ducimus
+quibusdam neque. Id quasi deserunt, nam voluptate animi impedit?
+<h3>Infância</h3>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, cupiditate harum
+odit ab dolore sunt accusamus! Sapiente expedita earum explicabo ducimus
+quibusdam neque.
+<h2>Trabalho</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, praesentium
+laborum officia earum quibusdam non, numquam qui corrupti, corporis nulla
+expedita ex maxime error quae. Incidunt assumenda et similique sequi!
+<a href="">Saiba mais</a>
+
+<!--
+  Exemplo de Lista não ordenada
+-->
+<h1>Suco detox</h1>
+<h2>Ingredientes:</h2>
+
+<ul>
+  <li>3 folhas de couve;</li>
+  <li>1 laranja;</li>
+  <li>1 pedacinho gengibre;</li>
+  <li>300ml de água;</li>
+  <li>Adoçante a gosto;</li>
+  <li>Gelo a gosto.</li>
+</ul>
+
+<!--
+  Exemplo de Lista ordenada
+-->
+
+<ol>
+  <li>3 folhas de couve;</li>
+  <li>1 laranja;</li>
+  <li>1 pedacinho gengibre;</li>
+  <li>300ml de água;</li>
+  <li>Adoçante a gosto;</li>
+  <li>Gelo a gosto.</li>
+</ol>
+
+<!--
+  Exemplo abaixo sem usar <ul> ou <ol>, sempre devemos usar!!
+-->
+
+<li>3 folhas de couve;</li>
+<li>1 laranja;</li>
+<li>1 pedacinho gengibre;</li>
+<li>300ml de água;</li>
+<li>Adoçante a gosto;</li>
+<li>Gelo a gosto.</li>
+
+<!--
+  Citações no HTML
+  <blockquote>
+  <cite>
+  <q>
+-->
+
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+  O <strong>Elemento HTML <code>&lt;blockquote&gt;</code></strong> (ou
+  <em>HTML Block Element</em>) indica que um texto externo foi citado
+</blockquote>
+<p>
+  De acordo com
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+    <cite>página MDN blockqueote</cite></a>
+</p>
+<p>
+  O elemento quote - <code>&lt;q&gt;</code> - é
+  <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">usado para citações curtas que não precisam de
+    parágrafos ou quebra de
+    linha</q>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"><cite>MDN q page</cite></a>
+</p>
+<!-- Abreviações
+     <abbr>
+   -->
+<p>
+  Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos web.
+</p>
+<!-- 
+  Detalhes de contato
+  <address>
+ -->
+<address>
+  <p>
+    Fabio Moura
+    <br />
+    <strong>Itumbiara, Go</strong>
+  </p>
+</address>
+<!-- 
+  Lista de descrição
+  <dl>
+    <dt></dt>
+    <dd></dd>
+  </dl>
+ -->
+<h2>Glossário</h2>
+<dl>
+  <dt>Hypertext</dt>
+  <dd>É um hiper texto com possibilidades...</dd>
+
+  <dt>Markup</dt>
+  <dd>Marcação do texto</dd>
+
+  <dt>Language</dt>
+  <dd>Linguagem com sua semântica e sintaxe...</dd>
+</dl>
+<!-- 
+  Representando códigos de computador
+
+  <code>
+    Partes genéricas de código
+
+  <pre>
+    Blocos de código, pois essa tag mantém os espaços em brancos e recuos que eu colocar no meu código.
+ -->
+
+<code> document .querySelector("body") </code>
+<pre>
+   <code>
+  document
+      .querySelector("body")
+</code></pre>
+<!-- 
+  Elementos genéricos
+  * <div>
+  * <span>
+ -->
+<div>Um texto qualquer</div>
+<span>outro</span> <span>texto</span>
+<!-- 
+  Hyperlinks - Elemento Âncora: <a>
+
+  +Atributos:
+  - globais (tittle, id, class..)
+  - href:
+    - para onde iremos, quando clicarmos no link?
+      - url completa
+      - fragmento
+      - email
+      - telefone
+      - outros
+  - download
+  - target
+    - _self (padrão)
+    - _blank
+ -->
+<br />
+<a href="https://www.google.com">Google</a>
+<br />
+<a href="https://www.google.com" target="_blank">Google</a>
+
+<p>Encontre-me:</p>
+<ul>
+  <li><a href="https://rocketseat.com.br">Website</a></li>
+  <li><a href="mailto:fabio.mmouras@hotmail.com">Email</a></li>
+  <li><a href="tel:+5534991817849">Telefone</a></li>
+</ul>
+<!-- 
+  Utilizando como fragmento
+ -->
+<p>Saiba mais:</p>
+<ul>
+  <li><a href="#about">Sobre mim</a></li>
+  <li><a href="#history">Historia</a></li>
+  <li><a href="#works">Trabalhos</a></li>
+</ul>
+
+<h1 id="about">Sobre mim</h1>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi repudiandae
+quis repellendus, officia quod nostrum perspiciatis accusantium distinctio neque
+doloremque voluptates saepe velit aut, sed enim sequi nihil eius? Soluta!
+
+<h2 id="history">Historia</h2>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis obcaecati ea
+tenetur, fugiat ab quia recusandae quos officia natus accusamus rem maiores!
+Excepturi corporis ab et quibusdam deserunt blanditiis facere?
+
+<h2 id="works">Trabalhos</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facere debitis
+nostrum voluptas inventore, vitae voluptatibus veritatis. Temporibus, fuga ab
+tempore quibusdam odio, sapiente eos quod fugiat alias, optio sed?
+<!-- 
+  Conteúdo dos hyperlinks
+
+    - qualquer conteúdo
+ -->
+<br />
+<a href="https://google.com" title="Ir para o google">
+  <h1>Google</h1>
+  <p>Posso colocar mais coisas, ate uma imagem</p>
+  <!-- <img src="https://source.unsplash.com/random" alt="" /> -->
+</a>
+<!-- 
+  URLs e Caminhos dos arquivos
+
+  - Uniform Resource Locator
+    - https://www.rocketseat.com.br
+    - Sequência de texto que define onde algo está localizado na web
+  - URL usam caminhos para encontrar aqrquivos
+
+  - Caminhos dos arquivos
+    - Onde, no explorador de arquivos, um recurso está localizado
+ -->
+<a href="https://google.com">Link do google</a>
+<br />
+<a href="../teste.html">Clique aqui</a>
+
+<!-- 
+  Como navegar pelos caminhos?
+
+  - mesmo diretório
+  - entrando em diretórios
+  - saindo de diretórios
+  - diretório raiz (root ou pai)
+ -->
+<br />
+<br />
+<a href="../teste.html">Arquivo na pasta anterior</a>
+<br />
+<a href="./index.html">Arquivo no diretorio raiz</a>
+<br />
+<a href="index.html">Arquivo na mesma pasta</a>
+<br />
+<a href="../outros/teste1.html">Arquivo na pasta outros</a>
+<!-- 
+  URLs absolutos vs relativos
+
+    - Absolutos
+      - inclui protocolo e nome de domínio
+        - https://www.rocketseat.com.br
+      - sempre apontará para o mesmo local, pois é absoluto
+
+    - Relativos
+      - relativo à página aberta no momento
+      - apontará para lugares diferentes
+ -->
+<br />
+<br />
+<a href="google.com">relativo: ir para o google</a>
+<br />
+<a href="https://google.com">absoluto: ir para o google</a>
+<!-- 
+  Exercício
+
+  Criando navegação entre arquivos
+  -Crie um projeto contendo
+    - 2 arquivos no diretório principal (index.html e contact.html)
+  - 1 diretório de nome files
+    - Dentro desse diretório, adicione 2 imagens da sua preferência e 1 arquivo de nome images.html, que irá listar as imagens
+
+  Dentro de cada arquivo .HTML, você deverá colocar:
+  1- Menu da navegação com uma lista não ordenada.
+  2- Título da página
+  3- Um ou mais parágrafos com informações da página
+
+  A navegação
+    Para o menu de navegação, use a tag <nav></nav>
+    e coloque a lista não ordenada como conteúdo da tag
+
+    O conteúdo de cada item da lista deverá conter um link
+
+    O conteudo do link deverá ser o nome da pagina.html que existe no projeto, sendo que para cada página, iremos ter um link
+
+    Ao clicarmos no link, devemos ser direcionados à página clicada.
+
+  Página images.html
+    Como conteúdo dessa página, além do que foi pedido, adicionar também:
+      - As duas imagens que você tem na pasta.
+      - Use a tag p ára colocar a tag img
+
+  Página contact.html
+  Como conteúdo desta página, além do que foi pedido, adicionar também
+    1- Colocar suas informações de contato: email e telefone;
+    2- Cada informação deverá estar dentro de um link que quando clicado, irá abrir a respectiva informação de contato ( email ou telefone.)
+ -->
+<!-- 
+  Tabela
+  <table>
+ -->
+<table>
+  <caption>
+    Pessoas por idade
+  </caption>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mayk</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Diego</td>
+      <td>25</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total: 2 pessoas</td>
+    </tr>
+  </tfoot>
+</table>
+<br />
+
+<!-- 
+  Tabela mais complexa
+
+  2 Lojas
+    Quantos produtos foram produzidos, quantos
+    vendidos e agrupado por nome dos produtos
+ -->
+<table>
+  <caption>
+    Produzidos x Vendidos por loja
+  </caption>
+
+  <colgroup>
+    <col />
+    <col span="2" style="background-color: red" />
+    <col span="2" style="background-color: blue" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2" scope="colgroup">Afonso Pena</th>
+      <th colspan="2" scope="colgroup">Antônia Pereira</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Vassoura</th>
+      <td>50</td>
+      <td>30</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Baldes</th>
+      <td>10</td>
+      <td>10</td>
+      <td>30</td>
+      <td>25</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 
+  Cabeçalho <head>
+
+<meta>
+Atributos
+- charset
+- name
+- content
+- viewport
+- author
+- description
+- robots
+ -->
+
+<head>
+  <!-- codificação de caracteres especiais -->
+  <meta charset="UTF-8" />
+
+  <!-- portabilidade para dispositivos mobiles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<!-- favicon básico 
+  favorite icon
+  <link> para icones personalizados
+
+-->
+<link rel="icon" href="/icons/icon-48x48.png?v=cfca599cb367ccaf7377d56ddc7542f5/" />
+<!-- 
+  SEO: Searh Engine Optimization (motores de busca = google) 
+ -->
+
+<meta name="author" content="Mayk Brito" />
+<!-- Autor da pagina-->
+
+<meta name="description" content="Um website para iniciantes em programação" />
+<!-- Descrição que aparece na busca do google referente ao site-->
+
+<meta name="robots" content="index, follow" />
+<!--Padrão do robo do google-->
+
+<!-- <meta> redes sociais -->
+
+<head>
+  <!-- Open Graph : facebook -->
+  <meta property="og:imagem" content="https://cdn-images-1.medium.com/max/922/1*TkXVfLTwsHdwpUEjGzdi9w@2x.jpeg" />
+  <meta property="og:description" content="Aqui vem um texto para ser mostrado ao compartilhar no facebook" />
+  <meta property="og:title" content="Um site da Rocketseat" />
+  <!-- twitter -->
+  <meta name="twitter:title" content="Rocketseat" />
+</head>
+<br>
+<input type="text">
+<br>
+<input type="time">
+<br>
+<input type="submit">
+<br>
+<input type="date">
+<br>
+<input type="url">
+<br>
+<input type="number">
+<br>
+<input type="file">
+<br>
+<input type="range">
+<br>
+<input type="search">
+<br>
+<button>Abrir Menu</button>
