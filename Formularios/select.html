@@ -1,0 +1,42 @@
+<!-- 
+  <select>
+
+  -Controle que fornece menu de opções
+
+  <option>
+
+  -Contém as opções a serem selecionadas
+  -Atributos necessários
+    -value
+  
+  Atributos únicos
+  -multiple
+    Habilita múltiplas opções
+  -size
+    Quando opções visíveis?
+ -->
+<label for="carselect">Qual modelo do carro</label>
+<select name="carmodel" id="carselect">
+  <option value="">Selecione o modelo</option>
+  <option value="fiat">Uno</option>
+  <option value="audi">A3</option>
+  <option value="bmw">X6</option>
+</select>
+<!-- carmodel=audi (O que é recebido no backend caso o selecionado fosse o A3.) -->
+<br>
+<br>
+<!-- Optgroup -->
+
+<label for="pets">Please choose one or more pets:</label>
+<select name="pets" id="pets">
+  <optgroup label="4-legged pets">
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+  </optgroup>
+  <optgroup label="Flying pets">
+    <option value="parrot">Parrot</option>
+    <option value="macaw">Macaw</option>
+    <option value="albatross">Albatross</option>
+  </optgroup>
+</select>
