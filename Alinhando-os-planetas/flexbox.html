@@ -11,6 +11,39 @@
   Flex-flow
   - shorthand
   - flex-direction | flex-wrap
+
+  Justify-content
+  - Alinhamento dos elementos dentro do container
+  - Distribuição dos elementos
+  - valores: (flex-start | flex-end | center | space-around | space-between | space-evenly)
+
+  Align-items
+  - Alinhamento dos elementos no eixo cruzado
+  - valores: (stretch | flex-start | flex-end | center)
+
+  Gap
+  - Espaços entre os elementos
+  - valores: Unidades de medidas - fixas: px,pt | flexíveis: %, em, rem
+
+  Propriedades para os itens
+  - flex-basis | flex-grow | flex-shrink | flex | order
+
+  Flex-basis
+  - Tamanho inicial do flex item antes da distribuição do espaço restante.
+
+  Flex-grow
+  - O crescimento do item dentro do container em relação aos espaços vazios.
+
+  Flex-shrink
+  - O encolher do item dentro do container.
+
+  Flex
+  - shorthand
+  - flex-grow flex-shrink flex-basis
+  - podem ter 1, 2 ou 3 valores
+
+  Order
+  - Muda a ordem dos items (padrão 0 em todos, para que seja o primeiro, colocar valores negativos, para que seja o último, valores positivos.)
 -->
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -25,11 +58,29 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      height: 600px;
+      border: 1px solid red;
+      align-items: center;
+      /* gap: 2px; */
+      width: 400px;
     }
 
-    .item {
+    .container div:nth-child(1) {
       border: 1px solid black;
-      width: 500px;
+      /* width: 500px; para ver o wrap acontecer*/
+      flex-basis: 50px;
+      order: 1;
+    }
+
+    .container div:nth-child(2) {
+      border: 1px solid red;
+      flex-grow: 2;
+    }
+
+    .container div:nth-child(3) {
+      flex-grow: 1;
+      border: 1px solid black;
+      order: -1;
     }
   </style>
 </head>
