@@ -1,0 +1,46 @@
+<!-- 
+  Imagem dentro de um botão
+
+  Crie um botão que contenha um ícone(img) e um texto.
+  Coloque um espaço de .4rem entre os elementos
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagem dentro de um botão</title>
+  <style>
+    button {
+      display: flex;
+      align-items: center;
+      line-height: 0;
+      gap: .4rem;
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    button img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <button>
+    <img src="images/play.svg" alt="">
+    Play
+  </button>
+  <button>
+    Buy
+    <img src="images/shop.svg" alt="">
+  </button>
+
+</body>
+
+</html>

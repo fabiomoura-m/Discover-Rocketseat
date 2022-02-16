@@ -1,0 +1,50 @@
+<!-- 
+  Footer
+
+  Crie o <footer> de um site que contenha a data de criação do site.
+  Usando flex, alinha o elemento do footer bem ao meio.
+  Deixe uma altura de 8rem para o footer
+  o footer deverá ficar no final da página
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      align-items: flex-end;
+      /* outra maneira de colocar o footer na parte debaixo da página seria o margin-top:auto; no footer. */
+    }
+
+    footer {
+      /* margin-top: auto; */
+      height: 8rem;
+      background-color: lightgray;
+      width: 100%;
+      /* poderia ser flex: 1; no lugar do width:100%; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <footer>
+    2022
+  </footer>
+</body>
+
+</html>
