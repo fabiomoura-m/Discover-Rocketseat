@@ -27,11 +27,14 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  transition: all ease 0.5s;
 }
 .menu-opener img,
 .menu-opener a {
-  display: block;
+  display: inline-block;
   padding: 20px;
+  cursor: pointer;
+  transition: all ease 0.5s;
 }
 .menu-opener a {
   display: flex;
@@ -41,6 +44,9 @@ body {
   height: 50px;
   background-color: var(--light-grey);
   border-radius: 10px;
+}
+.menu-opener div:first-child img:first-child {
+  display: none;
 }
 .menu-logOut {
   display: flex;
@@ -52,8 +58,78 @@ body {
   bottom: 0;
   background-color: var(--light-green);
 }
+.menu-logOut img:first-child {
+  display: none;
+}
+.menu-logOut div {
+  display: none;
+}
 h2 {
   color: var(--text-color);
   padding: 20px;
   line-height: 1;
+}
+span {
+  display: none;
+}
+.open {
+  width: 250px;
+  align-items: flex-start;
+}
+.open a {
+  justify-content: flex-start;
+  width: 222px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7px;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--text-color);
+}
+.open a img {
+  padding: 0;
+  padding-right: 20px;
+}
+.open div {
+  display: flex;
+  align-items: center;
+  transition: all ease 0.5s;
+}
+.open div:first-child {
+  width: 100%;
+  justify-content: space-between;
+}
+.open div:first-child img:first-child {
+  display: block;
+}
+.open span {
+  font-size: 15px;
+  display: block;
+  color: var(--text-color);
+}
+.menu-logOut.open {
+  justify-content: flex-start;
+}
+.menu-logOut.open div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  flex: 1;
+}
+.menu-logOut.open img:first-child {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  border-radius: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+}
+.menu-logOut.open p {
+  font-size: 15px;
+  color: var(--text-color);
+}
+.menu-logOut.open span {
+  font-size: 12px;
 }
