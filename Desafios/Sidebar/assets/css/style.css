@@ -17,119 +17,166 @@ body {
   font-family: 'Poppins', sans-serif;
   display: flex;
   background-color: var(--body-bg-color);
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-.menu-opener {
+.sidebar {
+  height: 100%;
   width: 78px;
   background-color: var(--green);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  transition: all ease 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  transition: all 0.5s ease;
 }
-.menu-opener img,
-.menu-opener a {
-  display: inline-block;
-  padding: 20px;
-  cursor: pointer;
-  transition: all ease 0.5s;
+.sidebar.active {
+  width: 250px;
 }
-.menu-opener a {
+
+.sidebar .logo_content .logo {
+  color: var(--text-color);
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  background-color: var(--light-grey);
-  border-radius: 10px;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
 }
-.menu-opener div:first-child img:first-child {
-  display: none;
+.sidebar.active .logo_content .logo {
+  opacity: 1;
+  pointer-events: none;
 }
-.menu-logOut {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 79px;
-  height: 60px;
+.logo_content .logo {
+  padding: 17px;
+}
+
+.sidebar .btn_menu {
   position: absolute;
-  bottom: 0;
+  left: 32%;
+  top: 28px;
+  cursor: pointer;
+}
+.sidebar.active .btn_menu {
+  left: 85%;
+}
+.sidebar ul li {
+  position: relative;
+  list-style: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.sidebar ul li input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: var(--light-grey);
+  padding-left: 60px;
+  font-size: 15px;
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+.sidebar ul li input::placeholder {
+  color: var(--text-color);
+}
+.sidebar ul li .img_search {
+  position: absolute;
+  z-index: 99;
+}
+.sidebar ul li a {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+  height: 50px;
+}
+.sidebar ul li a:hover {
+  background-color: var(--light-grey);
+}
+.sidebar ul li a img {
+  margin-right: 20px;
+}
+.sidebar .links_name {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.sidebar.active .links_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+.profile_content {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
   background-color: var(--light-green);
 }
-.menu-logOut img:first-child {
-  display: none;
+.profile_content .profile {
+  position: relative;
+  height: 60px;
+  padding-top: 8px;
 }
-.menu-logOut div {
-  display: none;
-}
-h2 {
-  color: var(--text-color);
-  padding: 20px;
-  line-height: 1;
-}
-span {
-  display: none;
-}
-.open {
-  width: 250px;
-  align-items: flex-start;
-}
-.open a {
-  justify-content: flex-start;
-  width: 222px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 7px;
-  text-decoration: none;
-  font-size: 15px;
-  color: var(--text-color);
-}
-.open a img {
-  padding: 0;
-  padding-right: 20px;
-}
-.open div {
+.profile_content .profile .profile_details {
   display: flex;
   align-items: center;
-  transition: all ease 0.5s;
+  opacity: 0;
+  pointer-events: none;
 }
-.open div:first-child {
-  width: 100%;
-  justify-content: space-between;
+.sidebar.active .profile .profile_details {
+  opacity: 1;
+  pointer-events: auto;
 }
-.open div:first-child img:first-child {
-  display: block;
-}
-.open span {
-  font-size: 15px;
-  display: block;
-  color: var(--text-color);
-}
-.menu-logOut.open {
-  justify-content: flex-start;
-}
-.menu-logOut.open div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1;
-  flex: 1;
-}
-.menu-logOut.open img:first-child {
+.profile .profile_details img {
+  margin-left: 13px;
   width: 45px;
   height: 45px;
-  padding: 0;
+  object-fit: cover;
   border-radius: 12px;
+}
+.profile .profile_details .name_job {
   margin-left: 10px;
-  margin-right: 10px;
-  display: block;
-}
-.menu-logOut.open p {
-  font-size: 15px;
   color: var(--text-color);
+  line-height: 1;
 }
-.menu-logOut.open span {
+.profile_details .name_job .name {
+  font-size: 15px;
+}
+.profile_details .name_job .job {
   font-size: 12px;
+  font-weight: 400;
+}
+.profile .log_out {
+  position: absolute;
+  left: 48%;
+  transform: translateX(-50%);
+  bottom: 18px;
+  text-align: center;
+}
+.sidebar.active .profile .log_out {
+  left: 88%;
+}
+.home_content {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 78px);
+  left: 78px;
+  transition: all 0.5s ease;
+}
+.home_content h2 {
+  font-size: 25px;
+  color: var(--text-color);
+  margin: 20px;
+}
+.sidebar.active ~ .home_content {
+  width: calc(100% - 250px);
+  left: 250px;
 }

@@ -1,18 +1,10 @@
-const openMenu = document.querySelector('.menu');
-const menuOpener = document.querySelector('.menu-opener');
-const menuLogOut = document.querySelector('.menu-logOut');
+const buttonMenu = document.querySelector('.btn_menu');
+const sidebar = document.querySelector('.sidebar');
+const searchBtn = document.querySelector('.img_search');
 
-openMenu.addEventListener('click', openSideBar);
-
-function openSideBar() {
-  if (
-    menuOpener.classList.contains('open') == false &&
-    menuLogOut.classList.contains('open') == false
-  ) {
-    menuOpener.classList.add('open');
-    menuLogOut.classList.add('open');
-  } else {
-    menuOpener.classList.remove('open');
-    menuLogOut.classList.remove('open');
-  }
-}
+buttonMenu.onclick = function () {
+  sidebar.classList.toggle('active');
+};
+searchBtn.onclick = function () {
+  sidebar.classList.toggle('active');
+};
