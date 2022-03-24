@@ -1,4 +1,4 @@
-# Desafio Página de Receita
+# Desafio - Página de Receita
 
 ![pagina-receita](https://user-images.githubusercontent.com/93055468/159832271-3b4a0177-45be-4bcb-86d5-2132c746113d.png)
 
@@ -12,6 +12,6 @@ O desafio está dividido em duas partes, no primeiro momento você irá criar a 
 - HTML
 - CSS
 
-## 🔗 Link do Notion do desafio
+## 🔗 Link do notion do desafio
 
 [Desafio](https://efficient-sloth-d85.notion.site/Desafio-Piloto-P-gina-de-Receita-15acc6a34f744484a2e64a1f115bfbae)
