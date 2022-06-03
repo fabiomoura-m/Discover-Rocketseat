@@ -18,6 +18,7 @@ export function Home() {
       })
     };
 
+    // recuperando o estado anterior mais o novo estudante.
     setStudents(prevState => [...prevState, newStudent]);
   }
 
@@ -52,7 +53,7 @@ export function Home() {
       <button type="button" onClick={handleAddStudent}>
         Adicionar
       </button>
-
+      {/* é necessário utilizar uma chave key de valor único para cada item criado, como um id */}
       {students.map(student => (
         <Card key={student.time} name={student.name} time={student.time} />
       ))}
